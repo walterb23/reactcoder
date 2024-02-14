@@ -1,5 +1,10 @@
 .titulo {
-width: 300px;
-color: rgba(0, 94, 94, 0.585);
+color: rgba(12, 243, 0, 0.585);
 margin: 20px;
+display: flex;
+font-family: "courier-std", monospace;
+font-style: normal;
+font-size: 300%;
+text-decoration: none;
+}
 }

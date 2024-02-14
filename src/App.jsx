@@ -1,21 +1,25 @@
 
 import './App.css'
-import Contenedor from './components/Contenedor/Contenedor'
+import ContenedorDetail from './components/ContenedorDetail/ContenedorDetail'
 import NavBar from './components/NavBar/NavBar'
 import Brand from './components/Brand/Brand'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-function App() {
+
+import Footer from './components/Footer/Footer'
+
+
+const App = () => {
   
 
   return (
     <>
-     <Brand/>
-    
-     <NavBar/>
      
-     <Contenedor/>
-
-     <ItemListContainer greeting={"Proximamente se actualizara nuestro catalogo!"}/>
+     <Brand/>
+     <NavBar/>
+  
+     <ItemListContainer/>  
+     <ContenedorDetail Id={1}/>
+     <Footer/>
     </>
   )
 }

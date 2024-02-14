@@ -1,4 +1,18 @@
+
 .colorItem {
-    color: rgb(15, 80, 242);
-    text-align: center;
-}
+    display: flex;
+    color: rgba(0, 255, 255, 0.521);
+    font-family: "courier-std", monospace;
+    font-style: normal;
+    font-size: 80%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+    }
+    .item {
+        height: 5px;
+        margin: 80px;
+       text-decoration: none;
+     
+    }

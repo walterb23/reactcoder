@@ -9,15 +9,14 @@ const NavBar =() => {
        
         
         <ul className="navbaritem">
-            <li className="item">
-                <a>Inicio</a>
-            </li>
-            <li className="item">
-                 <a>Productos</a>
-            </li>
-            <li className="item">
-                 <a>Empresa</a>
-            </li>
+            <div>
+                <a className="item">Inicio</a>
+
+                <a  className="item">Productos</a>
+
+               <a  className="item">Empresa</a>
+
+             </div>
         </ul>
         <CartWidget/>
     </>

@@ -3,7 +3,7 @@ import "./brand.css"
 
 const Brand = () => {
   return (
-    <h1 className='titulo' >Ecomerce</h1>
+    <h1 className='titulo' >RR-MOTOS</h1>
   )
 }
 

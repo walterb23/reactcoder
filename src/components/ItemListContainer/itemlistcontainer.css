@@ -1,16 +1,22 @@
 
 .colorItem {
-    display: flex;
+    background-color:black;
+
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     color: rgba(0, 255, 255, 0.521);
     font-family: "courier-std", monospace;
     font-style: normal;
     font-size: 80%;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    flex-wrap: nowrap;
-    justify-content: center;
+   
     }
     .item {
+        display: flex;
         height: 5px;
         margin: 80px;
        text-decoration: none;

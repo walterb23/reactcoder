@@ -29,7 +29,7 @@ const ItemListContainer = ({greeting}) => {
 
       <h1>{greeting}</h1>
 
-      {productos.length ==0 ? 
+      {productos.length == 0 ? 
       
       <h1>CARGANDO...</h1> 
       :  

@@ -1,17 +1,17 @@
 import React, {useState} from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({initial,stock}) => {
 
     const [contador,setContador] = useState(0);
 
     const decrementar = () => {
-        if(contador > 0){
+        if(contador > initial){
              setContador(contador - 1)
              alert("Producto Retirado")
      }
     }
     const incrementar = () => {
-        if(contador < 10){
+        if(contador < stock){
             setContador(contador + 1)
             agregarCarrito ()
       }

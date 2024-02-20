@@ -1,40 +1,40 @@
 [
     {
-        "Id":1,
+        "id":1,
         "nombre":  "ZANELLA ZT 250",
-        "img": "./src/assets/productos/images1.jpg",
+        "img": "/src/assets/productos/images1.jpg",
         "precio": "4000",
         "stock": "10",
         "descripcion": "ON/OFF, doble freno a disco, suspencion Invertida"
     },
     {
-        "Id":2,
+        "id":2,
         "nombre":  "VOLTA 7000w",
-        "img": "./src/assets/productos/images2.jpg",
+        "img": "/src/assets/productos/images2.jpg",
         "precio": "3000",
         "stock": "3",
         "descripcion": "Moto electrica, Potencia 7000w, Autonomia 200km"
     },
     {
-        "Id":3,
+        "id":3,
         "nombre": "HONDA Titan 150",
-        "img": "./src/assets/productos/images3.jpg",
+        "img": "/src/assets/productos/images3.jpg",
         "precio": "3500",
         "stock": "5",
         "descripcion": "Freno a disco delantero, Monocilindrica"
     },
     {
-        "Id":4,
+        "id":4,
         "nombre": "Honda WAVE 110",
-        "img": "./src/assets/productos/images4.jpg",
+        "img": "/src/assets/productos/images4.jpg",
         "precio": "2000",
         "stock": "15",
         "descripcion": "Freno a disco, inyeccion electronica"
     },
     {
-        "Id":4,
+        "id":4,
         "nombre": "ZANELLA FC 250",
-        "img": "./src/assets/productos/images5.jpg",
+        "img": "/src/assets/productos/images5.jpg",
         "precio": "5500",
         "stock": "15",
         "descripcion": "Inyeccion Electronica, Bicilindrica, suspencion Invertida"

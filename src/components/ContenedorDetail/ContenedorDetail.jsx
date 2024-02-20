@@ -6,7 +6,7 @@ const ContenedorDetail = () => {
 
   const [producto,setProducto] = useState([]);
 
-  const {idProducto} = useParams();
+  const {idProducto} = useParams()
 
     useEffect(()=>{
 
@@ -20,4 +20,4 @@ const ContenedorDetail = () => {
   )
 }
 
-export default ContenedorDetail
+export default ContenedorDetail 

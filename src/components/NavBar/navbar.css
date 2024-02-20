@@ -1,18 +1,26 @@
-.navbarItem {
-display: flex;
-color: rgba(0, 255, 255, 0.521);
-  font-family: "courier-std", monospace;
-   font-style: normal;
+.navbarItenAlig {
+
  
-  
-   text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    color: rgba(0, 255, 255, 0.521)
+}
+.navbarItem {
+position: relative;
+color: rgba(0, 255, 255, 0.521);
+ 
 }
 .navbarItemText {
-   display: inline-flex;
+   font-family: "courier-std", monospace;
+   font-style: normal;
     color: rgb(0, 0, 0);
     font-size: 160%;
     height: 5px;
-    margin: 80px;
+    margin: 20px;
+    text-align: center;
     text-decoration: none;
  
 }

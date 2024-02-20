@@ -3,11 +3,12 @@ import ItemCount from '../ItemCount/ItemCount';
 
 
 const ItemDetail = ({producto}) => {
-
+console.log(producto.nombre)
   return (
 
 
     <div> 
+    
         <h1>{producto.nombre}</h1>
         <img src={producto.img} alt={producto.nombre} />
       

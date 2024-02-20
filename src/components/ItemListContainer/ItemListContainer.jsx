@@ -1,33 +1,41 @@
 import React,{useState,useEffect} from 'react'
 import "./itemlistcontainer.css"
 import ItemList from '../ItemList/ItemList';
+import { useParams } from 'react-router-dom';
 
-
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
   const [productos,setProductos] = useState([]);
+
+  const {categoryId} =useParams()
 
   useEffect(()=>{
 
     const fetchData = async () => { 
          try {
-           const response = await fetch("../productos.json");
+           const response = await fetch("/productos.json");
            const data = await response.json()
-           setProductos(data)
+          
+           if(categoryId){
+              const filterProducts = data.filter((p)=>p.category == categoryId)
+              setProductos(filterProducts)
+           }else{
+              setProductos(data)
+
+           }
+
         }catch(error){
              console.log("Error en el fetch "+error)
         }
       }
       fetchData()
       
-    },[])
-
+    },[categoryId])
+ 
     
 
   return (
     <div className='colorItem'> 
-
-      <h1>{greeting}</h1>
 
       {productos.length == 0 ? 
       

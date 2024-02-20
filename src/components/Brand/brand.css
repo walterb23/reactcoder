@@ -1,9 +1,12 @@
 .titulo {
+background-color: black;
+border-radius: 50px;
 color: rgba(12, 243, 0, 0.585);
 margin: 20px;
 display: flex;
 font-family: "courier-std", monospace;
-font-style: normal;
+font-style:normal;
 font-size: 300%;
-text-decoration: none;
+text-align: center;
+flex-direction: column;
 }

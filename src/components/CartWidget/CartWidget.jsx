@@ -1,14 +1,16 @@
 import React from 'react'
 import "./cartwidget.css"
 import ItemCount from '../ItemCount/ItemCount'
+import { Link } from 'react-router-dom'
 <ItemCount/>
 const CartWidget = () => {
   return (
-    <>
-      <img className='logo' src="./img/carrito-de-compras.png" alt="" />
+    <Link to={'/carrito'}>
+    
+      <img className='logo' src="/img/carrito-de-compras.png" alt="" />
     <p>0 </p>
-    </>
- 
+    
+ </Link>
    )
 }
 

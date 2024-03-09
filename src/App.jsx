@@ -8,12 +8,15 @@ import Footer from './components/Footer/Footer'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import ContenedorDetail from './components/ContenedorDetail/ContenedorDetail'
+
+
 const App = () => {
   
 
   return (  
   
   <>
+  
     <BrowserRouter>
     
     <Brand/>
@@ -35,6 +38,7 @@ const App = () => {
      </BrowserRouter>
   
    <Footer/>
+  
     </>
   )
 }

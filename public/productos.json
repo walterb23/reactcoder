@@ -43,5 +43,23 @@
         "stock": "15",
         "category": "Cross",
         "descripcion": "Inyeccion Electronica, Bicilindrica, suspencion Invertida"
+    },
+    {
+        "id":6,
+        "nombre":  "Lucky Lion Diamond",
+        "img": "/src/assets/productos/images6.jpg",
+        "precio": "2500",
+        "stock": "5",
+        "category": "Electrica",
+        "descripcion": "Moto electrica, Potencia 4800w, Autonomia 30km, Peso 150kgr"
+    },
+    {
+        "id":7,
+        "nombre": "HONDA TORNADO 250",
+        "img": "/src/assets/productos/images7.jpg",
+        "precio": "7000",
+        "stock": "4",
+        "category": "Cross",
+        "descripcion": "Cargurada, Monocilindrica, Potencia 23CV, Velocidad Maxima 230Km/h"
     }
 ]

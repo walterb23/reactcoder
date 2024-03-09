@@ -1,7 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
-
 const ItemDetailContainer = () => {
 
     const [producto,setProducto] =  useState([]);
@@ -27,6 +26,7 @@ console.log(producto)
   return (  
     <div>
     <ItemDetail producto={producto}/>
+
     </div>
   )
 }

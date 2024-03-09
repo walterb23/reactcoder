@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 const Brand = () => {  
    
-  return (
-<Link to={'/'}>
-    <h1 className='titulo' >RR-MOTOS</h1>
- </Link> )
+return (
+  <Link to={'/'}>
+        <h1 className='titulo' >JW-MOTOS</h1>
+   </Link> )
 }
 
 

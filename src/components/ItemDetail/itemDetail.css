@@ -1,0 +1,13 @@
+.itemDetailText {
+   
+    background-color: rgb(0, 0, 0);
+    margin: 1%;
+    border-radius: 10px;
+  
+    color: rgb(45, 246, 0);
+    text-align: center;
+    text-decoration: none;
+    font-family: "courier-std", monospace;
+    font-style: normal;
+
+}

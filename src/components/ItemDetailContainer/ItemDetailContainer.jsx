@@ -21,7 +21,7 @@ const ItemDetailContainer = () => {
             }
             fetchData()
         },[])
-console.log(producto)
+//console.log(producto)//
 
   return (  
     <div>

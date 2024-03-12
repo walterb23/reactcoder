@@ -8,8 +8,8 @@ import Footer from './components/Footer/Footer'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import ContenedorDetail from './components/ContenedorDetail/ContenedorDetail'
-
-
+import Cart from './components/Cart/Cart'
+import CartProvider from './context/CartContext'
 const App = () => {
   
 
@@ -18,26 +18,31 @@ const App = () => {
   <>
   
     <BrowserRouter>
-    
-    <Brand/>
+    <CartProvider>
 
-     <NavBar/>
+     <Brand/>
+
+      <NavBar/>
   
-      <Routes>
+       <Routes>
 
-        <Route path='/' element={<ItemListContainer/>}/>
+         <Route path='/' element={<ItemListContainer/>}/>
 
-        <Route path='/categoria/:categoryId' element={<ItemListContainer/>}/>
+         <Route path='/categoria/:categoryId' element={<ItemListContainer/>}/>
 
-        <Route path='/detalle/:idProducto' element={<ItemDetailContainer/>}/>
+         <Route path='/detalle/:idProducto' element={<ItemDetailContainer/>}/>
 
-        <Route path='*' element= {<Error/>}/>
+         <Route path='/cart' element= {<Cart/>}/>
+ 
+         <Route path='*' element= {<Error/>}/>
  
        </Routes>
      
-     </BrowserRouter>
-  
-   <Footer/>
+      <Footer/>
+
+    </CartProvider>
+    
+  </BrowserRouter>
   
     </>
   )

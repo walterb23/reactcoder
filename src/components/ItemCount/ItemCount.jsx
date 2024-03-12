@@ -1,28 +1,30 @@
 import React, {useState} from 'react'
 
-const ItemCount = ({initial,stock}) => {
+const ItemCount = ({initial,stock,onAdd}) => {
 
     const [contador,setContador] = useState(0);
 
     const decrementar = () => {
         if(contador > initial){
              setContador(contador - 1)
-             alert("Producto Retirado")
+             onAdd(contador  - 1)
      }
     }
     const incrementar = () => {
         if(contador < stock){
             setContador(contador + 1)
-            agregarCarrito ()
+            onAdd(contador + 1)
       }
     }
     const agregarCarrito = () => {
         alert(" Productos Agregados al Carrito")
+      
     }
     const vaciarCarrito = () => {
         if(contador > 0){
           setContador(contador - contador)
            alert("Carrito Desechado")
+       
      }
     }
   return (

@@ -9,7 +9,7 @@ const CartItem = ({producto,eliminarItem}) => {
         <p>Valor unitario: ${producto.producto.precio*producto.cantidad}</p>
         <button onClick={()=>eliminarItem(producto.producto.id)}>Eliminarproducto</button>
     </div>
-  )
-}
+  );
+};
 
-export default CartItem
+export default CartItem ;

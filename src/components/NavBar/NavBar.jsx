@@ -15,7 +15,7 @@ const NavBar =() => {
                              <NavLink className="navbarItemText" to={'/'} >Inicio</NavLink>
                         
                         
-                             <NavLink className="navbarItemText" to={'/carrito'}>Carrito</NavLink>
+                        
                        
                       
                               <NavLink className="navbarItemText" to={'categoria/Naked'}>Naked</NavLink>       

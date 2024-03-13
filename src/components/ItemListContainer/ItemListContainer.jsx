@@ -17,8 +17,8 @@ const ItemListContainer = () => {
            const data = await response.json()
           
            if(categoryId){
-              const filterProducts = data.filter((p)=>p.category == categoryId)
-              setProductos(filterProducts)
+              const filteredProducts = data.filter((p) => p.category == categoryId)
+              setProductos(filteredProducts)
            }else{
               setProductos(data)
 

@@ -7,15 +7,16 @@ import { CartContext } from '../../context/CartContext'
 const CartWidget = () => {
 
   const {cantidadCarrito} = useContext(CartContext)
+  console.log(cantidadCarrito())
   return (
     <div>
       <img className='logo' src="/img/carrito-de-compras.png" alt="" />
-      <p>{cantidadCarrito() == 0 ? null : cantidadCarrito()}</p>
+      <p>Unidades{cantidadCarrito() == 0 ? null : cantidadCarrito()}</p>
     </div>
     
 
 
-   )
-}
+   );
+};
 
 export default CartWidget

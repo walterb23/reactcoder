@@ -6,26 +6,34 @@ import CartItem from '../CartItem/CartItem'
 const Cart = () => {
 
     const {cart,vaciarCarrito,eliminarItem,totalCarrito} = useContext(CartContext)
-  return (
-    <div>
-        {cart.length == 0 ? 
+  console.log(cart)
+    return (
+    <>
+        {cart.length == 0
+        ? 
 
         <>
         <h1>CARRITO VACIO</h1>
-        <Link to={"/"}>Inicio </Link>
+        <Link to={"/"}>Inicio</Link>
         </>   
+
         :
+
         <>
-        <h1>Lista de Carrito</h1>
-              {cart.map((p) => (
-                    <CartItem key={p.id} producto={p}  eliminarItem={eliminarItem}/>
-              ))}
-              <p>Total: ${totalCarrito()}</p>
+        <h3>Lista de Carrito</h3>
+        <div>
+            {cart.map ((p) => (
+                <CartItem key={p.id} producto={p} eliminarItem={eliminarItem}/>
+             ))}
+              <p>Total: ${totalCarrito}</p>
               <button onClick={vaciarCarrito}>Vaciar carrito</button>
+
+        </div>
+            
          </>
     }
      
-    </div>
-  )
-}
-export default Cart 
+    </>
+  );
+};
+export default Cart ;

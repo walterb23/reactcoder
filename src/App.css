@@ -1,4 +1,10 @@
 /*----------sliding effectt backwround-----------------*/
+
+
+#principal {
+
+  background-color: black;
+}
 .bg {
     animation: slide 5s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, rgba(1, 250, 55, 0.863) 50%, rgb(7, 26, 39) 50%);

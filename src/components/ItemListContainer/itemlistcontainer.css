@@ -1,7 +1,7 @@
 
 .colorItem {
     background-color:black;
-
+    opacity: 0.9;
     border-radius: 10px;
     display: inline-flex;
     flex-direction: row;

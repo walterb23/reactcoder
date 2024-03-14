@@ -22,15 +22,16 @@ agregarCarrito(producto,count)
     <div className='itemDetailText'> 
     
         <h1>{producto.nombre}</h1>
-        <img src={producto.img} alt={producto.nombre} />
+        <img className='itemDetailImg' src={producto.img} alt={producto.nombre} />
       
         <h2>Precio : {producto.precio}</h2>
         <h2>Stock : {producto.stock}</h2>
         <h3>Descripcion {producto.descripcion}</h3>
-        <Link to= {'/cart'}>Ir al Carrito</Link>
+       
         
        
-        {cart ? <Link to= {'/cart'}>Carrito</Link> : <ItemCount initial={1} stock={producto.stock} onAdd={onAdd}/>}
+        {cart ? 
+        <button className='itemDetailButton'><Link className='itemDetailTextCart' to= {'/cart'}>Carrito</Link></button> : <ItemCount initial={1} stock={producto.stock} onAdd={onAdd}/>}
          
        
     </div>

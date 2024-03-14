@@ -1,6 +1,7 @@
 .itemDetailText {
    
     background-color: rgb(0, 0, 0);
+    opacity: 0.9;
     margin: 1%;
     border-radius: 10px;
   
@@ -10,4 +11,27 @@
     font-family: "courier-std", monospace;
     font-style: normal;
 
+}
+.itemDetailTextCart {
+    display: inline-block;
+    height: auto;
+    font: 3em sans-serif;
+    margin: 1%;
+    border-radius: 10px;
+    color: rgb(45, 246, 0);
+    text-align: center;
+    text-decoration: none;
+    font-family: "courier-std", monospace;
+    font-style: normal;
+
+}
+.itemDetailButton {
+border-radius: 5em;
+background-color: blue;
+height: auto;
+display: inline-block;
+margin: 3%;
+}
+.itemDetailImg {
+    border-radius: 1em;
 }

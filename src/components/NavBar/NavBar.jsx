@@ -15,10 +15,10 @@ const NavBar =() => {
                              <NavLink className="navbarItemText" to={'/'} >Inicio</NavLink>
                         
                         
-                        
+                             <NavLink className="navbarItemText" to={'categoria/Naked'}>Naked</NavLink> 
                        
                       
-                              <NavLink className="navbarItemText" to={'categoria/Naked'}>Naked</NavLink>       
+                              <NavLink className="navbarItemText" to={'categoria/Superbikes'}>Super-Bikes</NavLink>       
                        
                     
                              <NavLink className="navbarItemText" to={'categoria/Cross'}>Cross</NavLink>       

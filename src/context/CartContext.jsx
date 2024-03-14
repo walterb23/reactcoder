@@ -25,11 +25,14 @@ console.log(cantidad)
         setCart([])
     }
     const cantidadCarrito = () => {
-        const totalQuatity = cart.reduce((total,item)=> total+item.cantidad,0)
+        const totalQuatity = cart.reduce((total,item)=> total+item.cantidad,0) 
+     
         return totalQuatity
     }
-    const totalCarrito = () =>{
-        const totalPrice = cart.reduce((total,item) => total + (item.producto.precio *item.cantidad))
+    const totalCarrito = () =>{ 
+        
+        const totalPrice = cart.reduce((total,item) => total + (item.producto.precio*item.cantidad))
+      
         return totalPrice
     }
 return(

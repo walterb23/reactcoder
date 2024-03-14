@@ -9,11 +9,12 @@ const CartWidget = () => {
   const {cantidadCarrito} = useContext(CartContext)
   console.log(cantidadCarrito())
   return (
+    <Link to= {'/cart'}>
     <div>
       <img className='logo' src="/img/carrito-de-compras.png" alt="" />
-      <p>Unidades{cantidadCarrito() == 0 ? null : cantidadCarrito()}</p>
+      <p className='cartWidgetText'> {cantidadCarrito() == 0 ? null : "+"+cantidadCarrito()}</p>
     </div>
-    
+    </Link>
 
 
    );

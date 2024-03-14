@@ -61,5 +61,14 @@
         "stock": "4",
         "category": "Cross",
         "descripcion": "Cargurada, Monocilindrica, Potencia 23CV, Velocidad Maxima 230Km/h"
+    },
+    {
+        "id":8,
+        "nombre": "YAMAHA FAZZER 600 2009",
+        "img": "/src/assets/productos/images8.jpg",
+        "precio": "15000",
+        "stock": "1",
+        "category": "Superbikes",
+        "descripcion": "Injeccion, tetracilindrico 16 valv, Potencia 98CV, Velocidad Maxima 310Km/h"
     }
 ]

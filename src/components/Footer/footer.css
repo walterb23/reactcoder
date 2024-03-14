@@ -1,10 +1,28 @@
 
 .footerItem {
-    display: flex;
+
+    background-color: black;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "courier-std", monospace;
     font-style: normal;
     font-size: 80%;
     margin-top:50px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+    color: rgb(73, 243, 61);
+   
     }
+.footerText {
+  
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    margin: 1%;
+    border-radius: 10px;
+  
+    color: rgb(45, 246, 0);
+    text-align: center;
+    text-decoration: none;
+    font-family: "courier-std", monospace;
+    font-style: normal; 
+}

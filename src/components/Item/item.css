@@ -1,17 +1,16 @@
 .img{
    
-   opacity: 0.8;
    border-radius: 10px;
    align-items: center;
    margin: 10px;
-   width: 150px;
-   height: 150px;
+   width: 200px;
+   height: 200px;
 
 
 
 }
 .itemText {
-   
+font-size: 1.21rem;
 background-color: rgb(34, 255, 5);
 margin: 1%;
 border-radius: 5px;
@@ -23,7 +22,16 @@ text-decoration: none;
 }
 .itemPosition {
 position: relative;
+border-radius: 10px;
+display: inline-flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+font-family: "courier-std", monospace;
+font-style: normal;
+font-size: 100%;
 
+text-decoration: none;
 
 
 }

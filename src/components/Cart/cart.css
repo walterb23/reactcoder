@@ -13,7 +13,7 @@ display: block;
     background-color:black;
     opacity: 0.9;
     border-radius: 10px;
-    display: inline-flex;
+   
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -53,3 +53,9 @@ display: block;
     font-family: "courier-std", monospace;
     font-style: normal;
     }
+.cartButtonLink {
+    color: rgb(45, 246, 0);
+    font-family: "courier-std", monospace;
+    font-style: normal;
+    text-decoration: none;
+}

@@ -5,9 +5,8 @@ const CartProvider = ({children}) => {
 
     const [cart,setCart] = useState([])
          const agregarCarrito = (producto,cantidad) => {
-console.log(producto)
-console.log(cantidad)
-            const productoExistente = cart.findIndex(p => p.producto.id == producto.id)
+
+            const productoExistente = cart.findIndex(prod => prod.producto.id == producto.id)
          
             if(productoExistente == -1){
                 setCart([...cart,{producto,cantidad}])
@@ -31,10 +30,11 @@ console.log(cantidad)
     }
     const totalCarrito = () =>{ 
         
-        const totalPrice = cart.reduce((total,item) => total + (item.producto.precio*item.cantidad))
-      
+        const totalPrice = cart.reduce((total,producto) => total + (producto.cantidad*producto.producto.precio),0)
+     
         return totalPrice
-    }
+      
+    } 
 return(
 
     <CartContext.Provider value={{

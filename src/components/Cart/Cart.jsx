@@ -7,34 +7,46 @@ import "./cart.css"
 const Cart = () => {
 
     const {cart,vaciarCarrito,eliminarItem,totalCarrito} = useContext(CartContext)
-  console.log(cart)
+ 
     return (
-    <>
+    <div>
         {cart.length == 0
-        ? 
+        ?  
 
         <>
         <h1 className='cartTitulo'>NO agregaste productos al CARRITO</h1>
-      
+        <button className='cartButton'>
+              <Link className='cartButtonLink' to= {'/'}>ENCONTRA LA MOTO PARA VOS</Link>
+                </button>
         </>   
 
         :
 
-        <>
+        <div>
         <h1 className='cartTitulo'>Carrito</h1>
-        <div className='cartDiv'>
+      
             {cart.map ((p) => (
                 <CartItem key={p.id} producto={p} eliminarItem={eliminarItem}/>
              ))}
-              <p className='cartDivText'>Total: ${totalCarrito}</p>
-              <button className='cartButton' onClick={vaciarCarrito}>Vaciar carrito</button>
-            <button className='cartButton' >Pagar</button>
-        </div>
+             <li className='cartDiv'>
+              <p className='cartDivText'>Total: $ {totalCarrito()}</p>
+
+              <button className='cartButton'  onClick={vaciarCarrito}>Vaciar carrito</button>
+
+              <button className='cartButton' >Pagar</button>
+
+              <button className='cartButton'>
+              <Link className='cartButtonLink' to= {'/'}>Seguir combrando</Link>
+                </button>
+
+             </li>
+          
+  
             
-         </>
+         </div> 
     }
-     
-    </>
+    
+    </div>
   );
 };
 export default Cart ;

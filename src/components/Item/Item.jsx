@@ -3,7 +3,7 @@ import "./item.css"
 import { Link } from 'react-router-dom'
 
 const Item = ({producto}) => {
-console.log(producto)
+
   return (
 
 <Link to={`/detalle/${producto.id}`}>
@@ -12,10 +12,10 @@ console.log(producto)
            <h2 className='itemText'>{producto.nombre}</h2>
            <img className='img' src={producto.img} alt={producto.nombre} />
       
-       </div>
+       </div> 
  
 </Link>
- );
-};
+ )
+}
 
 export default Item ;

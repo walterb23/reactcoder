@@ -1,4 +1,5 @@
 
+import React,{useState} from 'react'
 import "./App.css"
 import NavBar from './components/NavBar/NavBar'
 import Brand from './components/Brand/Brand'
@@ -9,27 +10,30 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import Cart from './components/Cart/Cart'
 import CartProvider from './context/CartContext'
+import { useEffect } from "react"
+import ItemDetail from "./components/ItemDetail/ItemDetail"
+import { getFirestore,collection,getDocs,query,where } from "firebase/firestore"
+
+
 const App = () => {
   
+   
 
   return (  
-  
-  <>
-  
+   <>
     <BrowserRouter>
     <CartProvider>
-
-     <Brand/>
+      <Brand/>
 
       <NavBar/>
-  
-       <Routes>
+
+      <Routes>
 
          <Route path='/' element={<ItemListContainer/>}/>
 
          <Route path='/categoria/:categoryId' element={<ItemListContainer/>}/>
 
-         <Route path='/detalle/:idProducto' element={<ItemDetailContainer/>}/>
+         <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
 
          <Route path='/cart' element= {<Cart/>}/>
  
@@ -40,11 +44,12 @@ const App = () => {
       <Footer/>
 
     </CartProvider>
+    </BrowserRouter>
     
-  </BrowserRouter>
-  
-    </>
-  )
+   </>
+     
+    
+ )
 }
 
 export default App

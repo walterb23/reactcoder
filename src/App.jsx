@@ -13,6 +13,7 @@ import CartProvider from './context/CartContext'
 import { useEffect } from "react"
 import ItemDetail from "./components/ItemDetail/ItemDetail"
 import { getFirestore,collection,getDocs,query,where } from "firebase/firestore"
+import Checkout from './components/Checkout/Checkout'
 
 
 const App = () => {
@@ -36,6 +37,8 @@ const App = () => {
          <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
 
          <Route path='/cart' element= {<Cart/>}/>
+
+         <Route path='/checkout' element= {<Checkout/>}/>
  
          <Route path='*' element= {<Error/>}/>
  

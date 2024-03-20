@@ -1,0 +1,77 @@
+.checkoutTitulo {
+    display: block;
+        color: green;
+        font-family: 'Courier New', Courier, monospace;
+        font-family: "courier-std", monospace;
+        font-style: normal;
+        font-size: 3em;
+      
+        text-align: center;
+     
+    }
+    .checkoutDiv {
+        background-color:black;
+        opacity: 0.9;
+        border-radius: 10px;
+       
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+        font-family: "courier-std", monospace;
+        font-style: normal;
+        font-size: 80%;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    .checkoutDivText {
+        display: flex;
+        margin: 2%;
+        color: greenyellow;
+        font-family: 'Courier New', Courier, monospace;
+        font-family: "courier-std", monospace;
+        font-style: normal;
+        font-size: 1.3em;
+        height: 20px;
+        text-align: center;
+     
+    }
+    .checkoutButton {
+       
+    
+        border-radius: 5em;
+        background-color: blue;
+        height: auto;
+        display: inline-block;
+        margin: 0%;
+        display: inline-block;
+        height: auto;
+        font: 1.5em sans-serif;
+        margin: 5%;
+        border-radius: 15px;
+        color: rgb(45, 246, 0);
+        text-align: center;
+       
+        font-family: "courier-std", monospace;
+        font-style: normal;
+        }
+    .checkoutButtonLink {
+        color: rgb(45, 246, 0);
+        font-family: "courier-std", monospace;
+        font-style: normal;
+        text-decoration: none;
+    }
+    .checkoutDivTextCompra {
+        background-color: cadetblue;
+        border-radius: 10px;
+        display: flex;
+        margin: 2%;
+        color: rgb(47, 255, 57);
+        font-family: 'Courier New', Courier, monospace;
+        font-family: "courier-std", monospace;
+        font-style: normal;
+        font-size: 2em;
+        height: 80px;
+        text-align: center;
+     
+    }

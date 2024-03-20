@@ -28,10 +28,16 @@ agregarCarrito(producto,count)
         <h2>Stock : {producto.stock}</h2>
         <h3>Descripcion {producto.descripcion}</h3>
        
-        
+        {producto.stock == 0 ?
+         <h2>SIN STOCK</h2> 
+         :
+          (cart ? 
+        <button className='itemDetailButton'><Link className='itemDetailTextCart' to= {'/cart'}>Carrito</Link></button> 
+        : 
+        <ItemCount initial={1} stock={producto.stock} onAdd={onAdd}/>
+        ) }
        
-        {cart ? 
-        <button className='itemDetailButton'><Link className='itemDetailTextCart' to= {'/cart'}>Carrito</Link></button> : <ItemCount initial={1} stock={producto.stock} onAdd={onAdd}/>}
+       
          
        
     </div>
